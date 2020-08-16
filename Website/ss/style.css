@@ -9,12 +9,23 @@ body {
 }
 
 /* HEADER SECTION */
-
-header {
-  position: absolute;
-  margin-top: 1em;
+.header-bar {
+  position: fixed;
   width: 100%;
+  overflow: hidden;
+  background-color: black;
+  padding: 20px 10px;
+}
 
+
+.header-logo {
+  float: left;
+  padding-left: 20px;
+  position: relative;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
 }
 
 nav {
@@ -23,7 +34,6 @@ nav {
 
 nav {
   border-radius: 5px;
-  border: 1px solid white;
   width: 100%;
 }
 
@@ -50,11 +60,11 @@ nav li a {
   font-size: .8em;
 
   /* Learnt this hover code from: https://css-tricks.com/having-fun-with-link-hover-effects/ */
-  background: linear-gradient(to bottom, #ff9800 0%, #ff9800 100%);
+  background: linear-gradient(to bottom, #00cccc 0%, #00cccc 100%);
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 2px 2px;
-  color: #000;
+  color: white;
   transition: background-size .5s;
 }
 
@@ -63,20 +73,65 @@ nav li a:hover {
 }
 /* End of code from 'css-tricks' */
 
+/* FOOTER */
 #footer-contact-information {
+  float: left;
 }
 
 #footer {
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  bottom: 0px;
   width: 100%;
-  height: 2.5rem;            /* Footer height */
+  height: 70px; /* Footer height */
+
+  font-size: 10px;
+  text-align: center;
+  padding: 20px;
+  bottom:30px;
+  color:gray;
+  background-color: black;
 }
 
 #footer-socials {
   padding-right: 20px;
+  float: right;
 }
 
 #footer-socials-list li{
   display: inline-block;
+}
+
+#footer-socials-list li img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+#footer-socials-list {
+margin: auto;
+}
+
+address {
+margin: auto;
+padding-bottom: 20px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.first-column {
+  float: left;
+  width: 100%;
+  padding: 5px;
+}
+
+.article {
+  float:left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
