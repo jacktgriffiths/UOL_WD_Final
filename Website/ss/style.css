@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: Verdana, Arial, sans-serif;
+  text-align: center;
+}
+
+/* HEADER SECTION */
+
+header {
+  position: absolute;
+  margin-top: 1em;
+  width: 100%;
+
+}
+
+nav {
+  grid-area: nav;
+}
+
+nav {
+  border-radius: 5px;
+  border: 1px solid white;
+  width: 100%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0.1em;
+}
+
+nav li a {
+  font-weight: 900;
+  font-style: normal;
+  padding: .75em; /* Added for mobile users to make it easier to click */
+  text-decoration: none; /* Remove the underline */
+  text-transform: uppercase;
+  font-size: .8em;
+
+  /* Learnt this hover code from: https://css-tricks.com/having-fun-with-link-hover-effects/ */
+  background: linear-gradient(to bottom, #ff9800 0%, #ff9800 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  color: #000;
+  transition: background-size .5s;
+}
+
+nav li a:hover {
+  background-size: 4px 50px;
+}
+/* End of code from 'css-tricks' */
+
+#footer-contact-information {
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+
+#footer-socials {
+  padding-right: 20px;
+}
+
+#footer-socials-list li{
+  display: inline-block;
+}
