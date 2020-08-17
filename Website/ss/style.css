@@ -2,20 +2,22 @@
   box-sizing: border-box;
 }
 
+
 body {
   height: 100%;
   font-family: Verdana, Arial, sans-serif;
   text-align: center;
-  background-color: black !important;
 }
 
 /* HEADER SECTION */
 .header-bar {
   position: fixed;
+  height: 75px;
   width: 100%;
   overflow: hidden;
   padding-top: 20px;
   background-color: black;
+  z-index: 999;
 }
 
 .header-logo {
@@ -26,13 +28,11 @@ body {
   font-weight: bold;
   text-decoration: none;
   color: white;
+  width: 25%;
 }
 
 nav {
   grid-area: nav;
-}
-
-nav {
   border-radius: 5px;
   width: 100%;
 }
@@ -41,6 +41,7 @@ nav ul {
   margin: 0;
   float: right;
   padding-right: 20px;
+  width: 75%;
 }
 
 ul {
@@ -120,13 +121,15 @@ padding-bottom: 20px;
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .first-column {
   float: left;
-  width: 100%;
+  max-width: 100%;
+  width: 25%;
   padding: 5px;
 }
 
 .article {
   float:left;
-  width: 50%;
+  max-width: 100%;
+  width: 25%;
   padding: 5px;
 }
 
@@ -135,4 +138,96 @@ padding-bottom: 20px;
   content: "";
   clear: both;
   display: table;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+#introduction-text {
+  text-align: justify;
+  float:left;
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#introduction-video {
+  float:left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contact-form-container {
+  border-radius: 5px;
+  width: 50%;
+  height: 50%;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.content-wrapper {
+  padding-top: 75px;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .nav ul, .header-logo, #introduction-title, #introduction-text {
+    width:100%;
+  }
+
+  #introduction-title {
+    text-align: center;
+  }
+}
+
+video {
+    float:left;
+    max-width: 100%;
+    width: 50vw;
+    padding: 5px;
+  }
 }
