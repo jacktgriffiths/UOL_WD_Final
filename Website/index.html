@@ -11,103 +11,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="refresh" content="600">
   <meta name="keywords" content="Double Jaw Surgery 'Jaw Surgery'">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <!--<link rel="stylesheet" href="ss/bootstrap/bootstrap.min.css">-->
   <link rel="stylesheet" type="text/css" href="ss/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/index.js"></script>
 </head>
 
 
 <body>
 
   <header>
-    <div class="header-bar">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar-main">
+      <a class = "navbar-brand" href="#">Double Jaw Surgery</a>
+      <ul class="navbar-nav header-nav-ul" id="navbar-list">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cases.html">Cases</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="types.html">Types</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="experiences.html">Experiences</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="learn_more.html">Learn More</a>
+        </li>
+      </ul>
+
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="hamburgerToggle()">
+        <i class="fa fa-bars" id="hamburger-icon"></i>
+      </a>
+
+    </nav>
+  </header>
+
+  <main class="content-wrapper">
+    <section class="introduction-section" id="intro-section">
       <div>
-        <a class = "header-logo">Double Jaw Surgery</a>
+        <h2 id="introduction-title">An introduction to Double Jaw Surgery...</h2>
+        <p class="introduction-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+        </p>
       </div>
-      <div id="nav-bar">
-        <nav>
-          <ul>
-            <li class="nav-item"><a class="navigation-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="navigation-link" href="cases.html">Cases</a></li>
-            <li class="nav-item"><a class="navigation-link" href="types.html">Types</a></li>
-            <li class="nav-item"><a class="navigation-link" href="experiences.html">Experiences</a></li>
-            <li class="nav-item"><a class="navigation-link" href="learn_more.html">Learn More</a></li>
-          </ul>
-        </nav>
+
+      <div class="introduction-video">
+        <video controls>
+          <source src="videos/jawsurgery.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </section>
+
+      <section class="article-section">
+        <div id="article">
+          <img src="images/img_snow.jpg" alt="Snow" style="width:100%">
+        </div>
+        <div id="article">
+          <img src="images/img_mountains.jpg" alt="Snow" style="width:100%">
+        </div>
+        <div class="article">
+          <img src="images/img_snow.jpg" alt="Snow" style="width:100%">
+        </div>
+        <div class="article">
+          <img src="images/img_mountains.jpg" alt="Snow" style="width:100%">
+        </div>
+        <div class="article">
+          <img src="images/img_snow.jpg" alt="Snow" style="width:100%">
+        </div>
+        <div class="article">
+          <img src="images/img_mountains.jpg" alt="Snow" style="width:100%">
+        </div>
+        <div class="article">
+          <img src="images/img_snow.jpg" alt="Snow" style="width:100%">
+        </div>
+        <div class="article">
+          <img src="images/img_mountains.jpg" alt="Snow" style="width:100%">
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+
+      <div class="footer-address">
+       <p><i class="footer-map-marker"></i>Senate House, Malet St, Bloomsbury, London WC1E 7HU, United Kingdom</p>
+        <p><i class="footer-phone"></i>+44 (0)20 7862 8360</p>
       </div>
-    </div>
-    </header>
 
-    <main class="content-wrapper">
-      <section id="introduction-section">
-        <div class="row">
-          <div id="introduction-text">
-            <h2 id="introduction-title">Introduction to Double Jaw surgery...</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
-          </div>
+      <div class="footer-contact-information">
+        <ul>
+          <li class="contact">Contact: Jack Griffiths</li>
+          <li class="email"><a href="jtg9@student.london.ac.uk">jtg9@student.london.ac.uk</a></li>
+        </ul>
+      </div>
 
-          <div id="introduction-video">
-            <video controls>
-              <source src="videos/jawsurgery.mp4" type="video/mp4">
-                Your browser does not support HTML video.
-              </video>      </div>
+      <div class="footer-socials">
+        <ul class="footer-socials-list">
+          <li><a href="https://facebook.com">
+            <img src="images/fb.png" alt=""></a></li>
+          <li><a href="https://twitter.com">
+            <img src="images/tw.png" alt=""></a></li>
+          <li><a href="https://instagram.com">
+            <img src="images/ig.png" alt=""></a></li>
+        </ul>
+      </div>
+    </footer>
 
-            </section>
-
-            <section class="article-section">
-              <div class="row">
-                <div class="article">
-                  <img src="images/img_snow.jpg" alt="Snow" style="width:100%">
-                </div>
-                <div class="article">
-                  <img src="images/img_mountains.jpg" alt="Snow" style="width:100%">
-                </div>
-                <div class="article">
-                  <img src="images/img_snow.jpg" alt="Snow" style="width:100%">
-                </div>
-                <div class="article">
-                  <img src="images/img_mountains.jpg" alt="Snow" style="width:100%">
-                </div>
-                <div class="article">
-                  <img src="images/img_snow.jpg" alt="Snow" style="width:100%">
-                </div>
-                <div class="article">
-                  <img src="images/img_mountains.jpg" alt="Snow" style="width:100%">
-                </div>
-                <div class="article">
-                  <img src="images/img_snow.jpg" alt="Snow" style="width:100%">
-                </div>
-                <div class="article">
-                  <img src="images/img_mountains.jpg" alt="Snow" style="width:100%">
-                </div>
-              </div>
-            </section>
-          </main>
-
-
-          <div id=footer>
-            <div id="footer-contact-information">
-              <ul>
-                <li id="contact">Contact: Jack Griffiths</li>
-                <li id="email"><a href="jtg9@student.london.ac.uk">jtg9@student.london.ac.uk</a></li>
-              </ul>
-            </div>
-
-            <div id="footer-socials">
-              <ul id="footer-socials-list">
-                <li><a href="https://facebook.com">
-                  <img src="images/fb.png" alt=""></a></li>
-                  <li><a href="https://twitter.com">
-                    <img src="images/tw.png" alt=""></a></li>
-                    <li><a href="https://instagram.com">
-                      <img src="images/ig.png" alt=""></a></li>
-                    </ul>
-                  </div>
-
-                  <address>
-                    <p><i class="footer-map-marker"></i>Senate House, Malet St, Bloomsbury, London WC1E 7HU, United Kingdom</p>
-                    <p><i class="footer-phone"></i>+44 (0)20 7862 8360</p>
-                  </address>
-                </div>
-
-              </body>
-              </html>
+</body>
+</html>

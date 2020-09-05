@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Verdana, Arial, sans-serif;
+  text-align: center;
+}
+
+/* HEADER SECTION */
+.header-bar {
+  position: fixed;
+  height: 75px;
+  width: 100vw;
+  overflow: hidden;
+  padding-top: 20px;
+  background-color: black;
+  z-index: 999;
+}
+
+.header-logo {
+  float: left;
+  position: relative;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  width: 25%;
+}
+
+nav {
+  grid-area: nav;
+  border-radius: 5px;
+  width: 100%;
+}
+
+nav ul {
+  margin: 0;
+  float: right;
+}
+
+#nav-bar {
+  padding-right:50px;
+}
+
+ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  font-weight: 900;
+  font-style: normal;
+  padding: .75em; /* Added for mobile users to make it easier to click */
+  text-decoration: none !important; /* Remove the underline */
+  text-transform: uppercase;
+  font-size: .8em;
+
+  /* Learnt this hover code from: https://css-tricks.com/having-fun-with-link-hover-effects/ */
+  background: linear-gradient(to bottom, #00cccc 0%, #00cccc 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  color: white;
+  transition: background-size .5s;
+}
+
+nav li a:hover {
+  background-size: 4px 50px;
+}
+/* End of code from 'css-tricks' */
+
+/* FOOTER */
+#footer-contact-information {
+  float: left;
+}
+
+#footer {
+  position: relative;
+  bottom: 0px;
+  width: 100vw;
+  height: 70px; /* Footer height */
+
+  font-size: 10px;
+  text-align: center;
+  padding: 15px;
+  bottom: 0px;
+  color:gray;
+  background-color: black;
+}
+
+#footer-socials {
+  float: right;
+}
+
+#footer-socials-list li{
+  display: inline-block;
+}
+
+#footer-socials-list li img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+#footer-socials-list {
+margin: auto;
+}
+
+address {
+margin: auto;
+padding-bottom: 20px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+
+.article-section {
+  width: 100vw;
+}
+
+.article {
+  float:left;
+  max-width: 100%;
+  width: 25%;
+  padding: 5px;
+}
+
+
+.row {
+  width: 100vw;
+  display: inline-block;
+}
+
+#introduction-section {
+  width: 100%;
+}
+
+#introduction-text {
+  text-align: justify;
+  float:left;
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#introduction-video {
+  float:left;
+  width: 50%;
+  padding: 5px
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contact-form-container {
+  border-radius: 5px;
+  width: 50%;
+  height: 50%;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.content-wrapper {
+  padding-top: 75px;
+  margin-bottom: 100px;
+  width: 100vw;
+}
+
+@media only screen and (max-width:620px) {
+
+}
+
+video {
+    float:left;
+    max-width: 100%;
+    padding: 5px;
+  }
