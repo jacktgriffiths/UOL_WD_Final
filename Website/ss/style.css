@@ -3,6 +3,10 @@ body {
   height: 100%;
 }
 
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 .content-wrapper {
   padding-bottom: 0.5em;
 }
@@ -108,8 +112,66 @@ nav li a:hover {
   margin: auto;
 }
 
+/* EXPERIENCES CSS */
+.img-text {
+  opacity: 0;
+  text-align: center;
+  transition: .5s ease;
+}
+
+.insta-img:hover .img-text {
+  opacity: 1;
+}
+
+.content-wrapper-experiences {
+  display: grid;
+}
+
+.banner {
+  max-width: 100%;
+  height: auto;
+  left: 0px;
+  right: 0px;
+}
+
+.ex-main-image {
+    width: 100%;
+    height: auto;
+    left: 0px;
+    right: 0px;
+}
+
+.title-text-block {
+  height:200px;
+  line-height: 200px;
+  text-align: center;
+  vertical-align: center;
+  font-size: 2em;
+  background: #dddd;
+}
+
+.insta-images-block {
+  display: grid;
+  grid-template-columns:repeat(5,1fr);
+}
+
+.insta-img {
+  padding: 2px;
+}
+
+.insta-img > img{
+  height: auto;
+  width: 100%;
+}
+
 @media only screen and (min-width: 991px) {
   #hamburger-icon {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .insta-images-block {
+    grid-template-columns: 1fr;
   }
 }
