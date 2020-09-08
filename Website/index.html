@@ -12,35 +12,15 @@
       <link rel="stylesheet" type="text/css" href="ss/style.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
       <script src="js/navbar.js"></script>
+    <script type="text/javascript">
+      $('#header').load('header.html');
+    </script>
    </head>
    <body>
-      <header>
-         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar-main">
-            <a class = "navbar-brand" href="#">Double Jaw Surgery</a>
-            <ul class="navbar-nav header-nav-ul" id="navbar-list">
-               <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="cases.html">Cases</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="types.html">Types</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="experiences.html">Experiences</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="learn_more.html">Learn More</a>
-               </li>
-            </ul>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="hamburgerToggle()">
-            <i class="fa fa-bars" id="hamburger-icon"></i>
-            </a>
-         </nav>
-      </header>
+<header id="header"></header>  
       <main class="content-wrapper">
          <section class="introduction-section" id="intro-section">
             <div>
