@@ -14,40 +14,15 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap" rel="stylesheet">
       <script src="js/navbar.js"></script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(function(){
+                $("#header").load("header.html");
+            });
+        </script>
    </head>
    <body>
-      <header>
-         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar-main">
-            <a class = "navbar-brand" href="#">Double Jaw Surgery</a>
-            <ul class="navbar-nav header-nav-ul" id="navbar-list">
-               <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="cases.html">Cases</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="types.html">Types</a>
-               </li>
-               <li class="nav-item active">
-                  <a class="nav-link" href="experiences.html">Experiences <span class="sr-only">(current)</span></a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="learn_more.html">Learn More </a>
-               </li>
-                              <li class="nav-item">
-                  <a class="nav-link" href="learn_more.html">Website Report</a>
-               </li>
-            </ul>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="hamburgerToggle()">
-            <i class="fa fa-bars" id="hamburger-icon"></i>
-            </a>
-         </nav>
-      </header>
-
-
-
+      <header id="header"></header>
       <main class="content-wrapper-experiences">
         <div class="banner">
           <img class="ex-main-image" src="images/header-img-experiences.png" alt="Snow">
