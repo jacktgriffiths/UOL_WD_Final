@@ -1,120 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-   <!-- This head section contains all the invisible information about the page -->
-   <head>
-      <title>Double Jaw Surgery Journey</title>
-      <meta charset="utf-8">
-      <meta name="description" content="A website designed for people interested in learning more about double jaw surgery.">
-      <meta name="author" content="Online Reading Community">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="refresh" content="600">
-      <meta name="keywords" content="Double Jaw Surgery 'Jaw Surgery'">
-      <link rel="stylesheet" type="text/css" href="ss/style.css">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap" rel="stylesheet">
-      <script src="js/navbar.js"></script>
-      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <script>
-            $(function(){
-                $("#header").load("header.html");
-            });
-        </script>
-   </head>
-   <body>
-      <header id="header"></header>
-      <main class="content-wrapper-experiences">
-        <div class="banner">
-          <img class="ex-main-image" src="images/header-img-experiences.png" alt="Snow">
-        </div>
-        <div class="title-text-block">
-          PERSONAL EXPERIENCE
-        </div>
+<!-- This head section contains all the invisible information about the page -->
+<head>
+  <title>Double Jaw Surgery Journey</title>
+  <meta charset="utf-8">
+  <meta name="description" content="A website designed for people interested in learning more about double jaw surgery.">
+  <meta name="author" content="Online Reading Community">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="refresh" content="600">
+  <meta name="keywords" content="Double Jaw Surgery 'Jaw Surgery'">
+  <link rel="stylesheet" type="text/css" href="ss/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap" rel="stylesheet">
+  <script src="js/navbar.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+  $(function(){
+    $("#header").load("header.html");
+  });
 
-        <div class="insta-images-block">
-        <div class="insta-img">
-           <img src="images/insta/20200209_174417.jpg" alt="Snow">
-            <div class="img-text">Side profle: Day before surgery</div>
-        </div>
-        <div class="insta-img">
-           <img src="images/insta/20200209_174103.jpg" alt="Snow">
-            <div class="img-text">Front: Day before surgery</div>
-        </div>
-        <div class="insta-img">
-           <img src="images/insta/20200209_174103.jpg" alt="Snow">
+  $(function(){
+    $("#footer").load("footer.html");
+  });
+  </script>
+</head>
+<body>
+  <header id="header"></header>
+  <main class="content-wrapper-experiences">
+    <div class="banner">
+      <img class="ex-main-image" src="images/header-img-experiences.png" alt="Snow">
+    </div>
+    <div class="title-text-block">
+      PERSONAL EXPERIENCE
+    </div>
+    <div class="insta-images-block">
+      <!-- The Modal -->
+      <div id="modal_id" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
 
-            <div class="img-text">Hello World</div>
-        </div>
-        <div class="insta-img">
-           <img src="images/insta/20200210_191059.jpg" alt="Snow">
+      <div class="insta-img">
+        <img id="side-profile-before-surgery" src="images/insta/20200209_174417.jpg" alt="Side profile before surgery" onclick="modal('side-profile-before-surgery')">
+      </div>
+      <div class="insta-img">
+        <img id="front-before-surgery" src="images/insta/20200209_174103.jpg" alt="Face before surgery" onclick="modal('front-before-surgery')">
+      </div>
+      <div class="insta-img">
+        <img id="xxxx" src="xxxx" alt="xxxx">
+      </div>
+      <div class="insta-img">
+        <img id="waking-up-after-surgery" src="images/insta/20200210_191059.jpg" alt="Waking up after surgery" onclick="modal('waking-up-after-surgery')">
+      </div>
+      <div class="insta-img">
+        <img id="new-jaw-position" src="images/insta/20200210_204539.jpg" alt="New jaw position" onclick="modal('new-jaw-position')">
 
-            <div class="img-text">Waking up after surgery</div>
-
-        </div>
-        <div class="insta-img">
-           <img src="images/insta/20200210_204539.jpg" alt="Snow">
-
-            <div class="img-text">New jaw position!</div>
-
-        </div>
-        <div class="insta-img">
-           <img src="images/insta/20200211_061545.jpg" alt="Snow">
-
-            <div class="img-text">The night in hospital</div>
-
-        </div>
-        <div class="insta-img">
-           <img src="images/insta/20200211_110009.jpg" alt="Snow">
-
-            <div class="img-text">Just before being discharged</div>
-
-        </div>
-        <div class="insta-img">
-           <img src="images/insta/20200212_085103.jpg" alt="Snow">
-
-            <div class="img-text">Getting ready for a shower after coming home</div>
-
-        </div>
-        <div class="insta-img">
-           <img src="images/insta/20200212_145959.jpg" alt="Snow">
-
-            <div class="img-text">The hilarious ice packs</div>
-
-        </div>
-        <div class="insta-img">
-           <img src="images/insta/20200213_094155.jpg" alt="Snow">
-
-            <div class="img-text">Day 3: Swelling at its worst</div>
-        </div>
-        </div>
-      </main>
+      </div>
+      <div class="insta-img">
+        <img id="swelling-in-hospital" src="images/insta/20200211_061545.jpg" alt="The swelling on the first night" onclick="modal('swelling-in-hospital')">
 
 
-      <!-- Footer -->
-      <footer class="footer-main">
-         <div class="footer-address">
-            <p><i class="footer-map-marker"></i>Senate House, Malet St, Bloomsbury, London WC1E 7HU, United Kingdom</p>
-            <p><i class="footer-phone"></i>+44 (0)20 7862 8360</p>
-         </div>
-         <div class="footer-contact-information">
-            <ul>
-               <li class="contact">Contact: Jack Griffiths</li>
-               <li class="email"><a href="jtg9@student.london.ac.uk">jtg9@student.london.ac.uk</a></li>
-            </ul>
-         </div>
-         <div class="footer-socials">
-            <ul class="footer-socials-list">
-               <li><a href="https://facebook.com">
-                  <img src="images/fb.png" alt=""></a>
-               </li>
-               <li><a href="https://twitter.com">
-                  <img src="images/tw.png" alt=""></a>
-               </li>
-               <li><a href="https://instagram.com">
-                  <img src="images/ig.png" alt=""></a>
-               </li>
-            </ul>
-         </div>
-      </footer>
-   </body>
+      </div>
+      <div class="insta-img">
+        <img id="discharge-from-hospital" src="images/insta/20200211_110009.jpg" alt="Ready to be discharged from hospital" onclick="modal('discharge-from-hospital')">
+
+
+      </div>
+      <div class="insta-img">
+        <img id="just-before-first-shower" src="images/insta/20200212_085103.jpg" alt="Getting ready for my first shower" onclick="modal('just-before-first-shower')">
+
+
+      </div>
+      <div class="insta-img">
+        <img id="ice-pack" src="images/insta/20200212_145959.jpg" alt="Ice pack to help reduce the swelling" onclick="modal('ice-pack')">
+
+
+      </div>
+      <div class="insta-img">
+        <img id="worst-swelling" src="images/insta/20200213_094155.jpg" alt="The swelling at its worst level" onclick="modal('worst-swelling')">
+
+      </div>
+    </div>
+  </main>
+
+
+  <!-- Footer -->
+  <footer id="footer">
+  </footer>
+</body>
 </html>
