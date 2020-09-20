@@ -13,6 +13,7 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src="js/navbar.js"></script>
+      <script src="js/contactUs.js"></script>
       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
       <script>
          $(function(){
@@ -28,9 +29,9 @@
       <header id="header"></header>
       <main class="content-wrapper">
          <h2 class="contact-us-header">Learn More</h2>
-         <div class="links-map">
+         <div class="links-map"> <!-- Wrapper to hold the important links and  -->
             <div class="important-links">
-               <h2>Important Links</h2>
+               <h2>Important Links</h2> <!-- Important links to different helpful websites -->
                <ul>
                   <li><a href="https://www.qvh.nhs.uk/wp-content/uploads/2015/09/A-guide-for-pts-considering-orthognathic-surgery-Rvw-February-2020.pdf">A guide for patients considering orthodontics and jaw surgery (Orthognathic Treatment)</a></li>
                   <li><a href="https://www.nhs.uk/conditions/orthodontics">Orthadontics NHS</a></li>
@@ -39,12 +40,12 @@
                   <li><a href="https://www.healthline.com/health/double-jaw-surgery">Double Jaw Surgery - Healtline</a></li>
                </ul>
             </div>
-            <div class="location-map">
+            <div class="location-map"> <!-- Imported map from google maps -->
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2089.736148894528!2d-0.03520771576913452!3d51.47414462444774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487602f81f1bd2cf%3A0xeb2cff5d2300d7f8!2sGoldsmiths%2C%20University%20of%20London!5e0!3m2!1sen!2suk!4v1600598231968!5m2!1sen!2suk" width="100%" height="500px" frameborder="0"></iframe>
             </div>
          </div>
-         <div class="contact-form-container">
-            <form name= "contact-form" action="#" onsubmit="return checkFormValidation()">
+         <div class="contact-form-container"> <!-- Container for the contact form -->
+            <form name= "contact-form" action="#" onsubmit="return checkFormValidation()"> <!-- When submitting, it runs the code from 'contactUs.js' which checks that the fields are filled -->
                <label for="name">Full Name</label>
                <input type="text" id="name" name="name" placeholder="Your name..">
                <label email="email">Email</label>
